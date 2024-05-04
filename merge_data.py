@@ -3,6 +3,8 @@ import os
 import json
 import pandas as pd
 
+from exportsdataset import ExportsDataset
+
 # Define paths and symbol
 symbol = 'EURUSD'
 base_path = f'dataset/{symbol}/'
@@ -48,3 +50,11 @@ finally:
             print(f"Error creating directory at {base_path}: {error}") #%H%M%S
     with open(f'dataset/{symbol}/deploy/{symbol}_daploy{datetime.now().strftime("%Y%m%d")}.json', 'w') as f:
         f.write(data_m.to_json(orient="index"))
+
+
+
+class mergedata(ExportsDataset):
+    def __init__ ():
+        super.__init__()
+        
+    
