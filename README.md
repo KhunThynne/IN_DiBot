@@ -5,10 +5,7 @@
 <br/>
 <small>Base code language python </small>
 
-
-
+<br/>
 pip install MetaTrader5
-
-
 
 python indi.py
